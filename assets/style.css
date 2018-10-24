@@ -66,3 +66,44 @@ div#navbar{
     margin-top: 20px;
     color: #ffffff;
 }
+
+/*div {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}*/
+
+.clearfix{
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-top: 10px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img {
+    float: right;
+}
+
+.blog{
+  padding-top: 25px;
+}
+
+.blog p{
+  font-size: 18px;
+}
+.thumbnail{
+  margin-bottom: 0px !important;
+}
+.blogsidebar{
+  padding-top: 25px;
+}
+.blogsidebar img{
+  height: 30%;
+  width: 30%;
+}
+.blogsidebar p{
+  font-size: 16px;
+}
