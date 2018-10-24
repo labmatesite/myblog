@@ -21,7 +21,7 @@
     <h3><strong style="color: #4CAF50;">Popular Post</strong></h3>
         <?php for ($i=0; $i < 5; $i++) { ?>
     <div class="clearfix">
-  <img class="img thumbnail" src="assets/paris.jpg" alt="demo" width="170" height="170">
+  <img class="img thumbnail" src="<?= base_url(); ?>assets/paris.jpg" alt="demo" width="170" height="170">
   <h4><strong>Lorem ipsum</strong></h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
   </div>

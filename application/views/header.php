@@ -15,7 +15,7 @@
   <div class="topnav">
   <a href="<?=  base_url('about'); ?>">About</a>
   <a href="<?=  base_url('blog'); ?>">Blog</a>
-  <a href="<?=  base_url('portfolio'); ?>">Portfolio</a>
+<!--   <a href="<?=  base_url('portfolio'); ?>">Portfolio</a> -->
   <a href="<?=  base_url('contact'); ?>">Contact</a>
 </div>
 </div>
