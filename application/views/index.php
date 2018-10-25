@@ -7,7 +7,7 @@
     <?php for ($i=0; $i < 10; $i++) { ?>
   <div class="clearfix">
   <img class="img thumbnail" src="assets/paris.jpg" alt="demo" width="170" height="170">
-  <h2><strong>Lorem ipsum</strong></h2>
+  <h2><strong><a href="<?= base_url('post')  ?>">Lorem Ipsum</a></strong></h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</p>
   </div>  
   <?php } ?>
@@ -22,7 +22,7 @@
         <?php for ($i=0; $i < 5; $i++) { ?>
     <div class="clearfix">
   <img class="img thumbnail" src="<?= base_url(); ?>assets/paris.jpg" alt="demo" width="170" height="170">
-  <h4><strong>Lorem ipsum</strong></h4>
+  <h2><strong><a href="<?= base_url('post')  ?>">Lorem Ipsum</a></strong></h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
   </div>
     <?php } ?>
@@ -35,7 +35,7 @@
         <?php for ($i=0; $i < 5; $i++) { ?>
     <div class="clearfix">
   <img class="img thumbnail" src="assets/paris.jpg" alt="demo" width="170" height="170">
-  <h4><strong>Lorem ipsum</strong></h4>
+  <h2><strong><a href="<?= base_url('post')  ?>">Lorem Ipsum</a></strong></h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
   </div>
     <?php } ?>

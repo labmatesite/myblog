@@ -37,6 +37,13 @@ class home extends CI_Controller {
 		$this->load->view('footer.php');	
 	}
 
+	public function post()
+	{
+		$this->load->view('header.php');
+		$this->load->view('post');
+		$this->load->view('footer.php');	
+	}
+
 	public function portfolio()
 	{
 		$this->load->view('header.php');
