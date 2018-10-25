@@ -14,11 +14,14 @@ class home extends CI_Controller {
 
         $this->load->helper('text');
 
+        $this->load->model('mymodel');
+
       }
 
 	public function index()
 	{
-		$this->load->view('header.php');
+		$data['data'] = $this->mymodel->post();
+		$this->load->view('header.php', $data);
 		$this->load->view('index');
 		$this->load->view('footer.php');		
 	}
@@ -32,7 +35,8 @@ class home extends CI_Controller {
 
 	public function blog()
 	{
-		$this->load->view('header.php');
+		$data['data'] = $this->mymodel->post();
+		$this->load->view('header.php', $data);
 		$this->load->view('blog');
 		$this->load->view('footer.php');	
 	}
