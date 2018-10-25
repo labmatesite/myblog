@@ -4,13 +4,16 @@
 
   <!-- blog container start-->
   <div class="col-md-8 blog">
-    <?php foreach ($data as  $value) { ?>
-  <div class="clearfix">
-  <img class="img thumbnail" src="assets/paris.jpg" alt="demo" width="170" height="170">
-  <h2><strong><a href="<?= base_url('post')  ?>"><?= $value['email'] ?></a></strong></h2>
-  <p><?= $value['post'] ?></p>
-  </div>  
-  <?php } ?>
+    <?php  foreach ($data as  $value) {
+      // limiting blog character to show on blog page
+        $postcon = word_limiter($value['post'],25);
+     ?>
+      <div class="clearfix">
+      <img class="img thumbnail" src="assets/paris.jpg" alt="demo" width="170" height="170">
+      <h2><strong><a href="<?= base_url('post')  ?>"><?= $value['email'] ?></a></strong></h2>
+      <p><?= $postcon?></p>
+      </div>  
+      <?php } ?>
                                           <!-- pagination -->
           <div>
             <ul  class="pagination justify-content-center" style="margin:20px 0">

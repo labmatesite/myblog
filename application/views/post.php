@@ -52,11 +52,19 @@
 <!-- rightbar start no-1-->
 <div class="col-md-4">
   <div class="blogsidebar">
+                                                  <!-- search bar -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit" style="width: 108px;">Search</button>
+        </form>
+     </nav>
+
     <h3><strong style="color: #4CAF50;">Popular Post</strong></h3>
         <?php for ($i=0; $i < 5; $i++) { ?>
     <div class="clearfix">
   <img class="img thumbnail" src="assets/paris.jpg" alt="demo" width="170" height="170">
-  <h4><strong>Lorem ipsum</strong></h4>
+   <h2><strong><a href="<?= base_url('post')  ?>">Lorem Ipsum</a></strong></h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
   </div>
     <?php } ?>
@@ -69,7 +77,7 @@
         <?php for ($i=0; $i < 5; $i++) { ?>
     <div class="clearfix">
   <img class="img thumbnail" src="assets/paris.jpg" alt="demo" width="170" height="170">
-  <h4><strong>Lorem ipsum</strong></h4>
+   <h2><strong><a href="<?= base_url('post')  ?>">Lorem Ipsum</a></strong></h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
   </div>
     <?php } ?>

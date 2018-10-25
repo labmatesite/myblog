@@ -16,6 +16,8 @@ class home extends CI_Controller {
 
         $this->load->model('mymodel');
 
+        $this->load->library('pagination');
+
       }
 
 	public function index()
