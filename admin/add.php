@@ -10,21 +10,16 @@ include_once("config.php");
 
 if(isset($_POST['Submit'])) {	
 	$post = mysqli_real_escape_string($mysqli, $_POST['post']);
-	$age = mysqli_real_escape_string($mysqli, $_POST['age']);
-	$email = mysqli_real_escape_string($mysqli, $_POST['email']);
+	$artname = mysqli_real_escape_string($mysqli, $_POST['artname']);
 		
 	// checking empty fields
-	if(empty($post) || empty($age) || empty($email)) {
+	if(empty($post) || empty($artname)) {
 				
 		if(empty($post)) {
 			echo "<font color='red'>Name field is empty.</font><br/>";
 		}
 		
-		if(empty($age)) {
-			echo "<font color='red'>Age field is empty.</font><br/>";
-		}
-		
-		if(empty($email)) {
+		if(empty($artname)) {
 			echo "<font color='red'>Email field is empty.</font><br/>";
 		}
 		
@@ -34,7 +29,7 @@ if(isset($_POST['Submit'])) {
 		// if all the fields are filled (not empty) 
 			
 		//insert data to database	
-		$result = mysqli_query($mysqli, "INSERT INTO users(post,age,email) VALUES('$post','$age','$email')");
+		$result = mysqli_query($mysqli, "INSERT INTO users(post,artname) VALUES('$post','$artname')");
 		
 		//display success message
 		echo "<font color='green'>Data added successfully.";

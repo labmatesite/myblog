@@ -4,8 +4,7 @@ use test;
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL auto_increment,
-  `name` varchar(100) NOT NULL,
-  `age` int(3) NOT NULL,
-  `email` varchar(100) NOT NULL,
+  `post` varchar(100) NOT NULL,
+  `artname` varchar(100) NOT NULL,
   PRIMARY KEY  (`id`)
 );
